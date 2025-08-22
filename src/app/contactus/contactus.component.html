@@ -1,4 +1,5 @@
-<form>
+<!-- <form> -->
+<!-- <form #userForm="ngForm" (ngSubmit)="onSubmit(userForm.value)">
   <div class="row g-3 align-items-center">
   
     <div class="col-md-6">
@@ -21,5 +22,25 @@
     </div>
 
   </div>
-</form>
+</form> -->
+
+<!-- Display Submitted Data -->
+<!-- <div *ngIf="submittedData" class="mt-4">
+  <h5>Form Submitted Successfully!</h5>
+  <pre>{{ submittedData | json }}</pre>
+</div> -->
+
+<h1>Get Input Data</h1>
+<input type="text" (input)="getName($event)" >
+<p>{{this.name}}</p>
+
+<label for="fname" class="form-label">First Name</label>
+<input type="text" id="fname" class="form-control" #fnameInput
+/>
+<button class="btn btn-primary" (click)="setName(fnameInput.value)">
+Add Name
+</button>
+ <p *ngIf="fname">
+    You entered: {{ fname }}
+  </p>
 
