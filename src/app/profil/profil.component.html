@@ -1,0 +1,10 @@
+<p>profil works!</p>
+<h4>Name is {{username}}</h4>
+<u>
+    @for(user of users;track user.id){
+       
+        <!-- <li><a routerLink="/users">Users</a></li> -->
+        <li><a routerLink="/users/{{user.id}}/{{user.name}}">{{user.name}}</a></li>
+       
+    }
+</u>
