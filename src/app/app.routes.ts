@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { ProfilComponent } from './profil/profil.component';
 import { UsersComponent } from './users/users.component';
+import { BasicFormComponent } from './basic-form/basic-form.component';
 
 
 export const routes: Routes = [
@@ -13,6 +14,7 @@ export const routes: Routes = [
     {path:'contact',component:ContactusComponent},
     {path:'profile/:name', component:ProfilComponent},
     {path:'users/:id/:name',component:UsersComponent},
+    {path:'basicf',component:BasicFormComponent},
     {path: '**', redirectTo: 'home' }, // Fallback for unexpected URLs
     
 ];
